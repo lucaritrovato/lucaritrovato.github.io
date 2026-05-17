@@ -26,7 +26,7 @@ const I18N = {
     'about.tag': '01 — Chi sono',
     'about.title': 'Un developer con la testa nel cloud SAP.',
     'about.p1': 'Sono un <strong>SAP Consultant</strong> con esperienza nello sviluppo end-to-end di applicazioni enterprise su <strong>SAP BTP</strong> tramite il modello <strong>CAP (Cloud Application Programming Model)</strong>. Progetto e sviluppo interfacce con <strong>SAPUI5</strong> e SAP Fiori, modello dati in <strong>SAP HANA</strong> con CDS e SQLScript, e integro servizi REST tramite OData v4.',
-    'about.p2': 'In parallelo seguo la <strong>laurea triennale in Ingegneria Informatica</strong> presso UniNettuno, in modalità part-time per lavoratori. Punto a consolidare le mie competenze full-stack in ambito SAP e a crescere verso ruoli di <strong>architettura cloud</strong>.',
+    'about.p2': 'In parallelo seguo la <strong>laurea triennale in Ingegneria Informatica</strong> presso UniNettuno. Punto a consolidare le mie competenze full-stack in ambito SAP e a crescere verso ruoli di <strong>architettura cloud</strong>.',
 
     'seeking.tag': '02 — Cosa cerco',
     'seeking.title': 'Dove voglio andare.',
@@ -137,7 +137,7 @@ const I18N = {
     'about.tag': '01 — About me',
     'about.title': 'A developer with his head in the SAP cloud.',
     'about.p1': 'I\'m an <strong>SAP Consultant</strong> with experience in end-to-end development of enterprise applications on <strong>SAP BTP</strong> using the <strong>CAP (Cloud Application Programming Model)</strong> framework. I design and build interfaces with <strong>SAPUI5</strong> and SAP Fiori, model data in <strong>SAP HANA</strong> with CDS and SQLScript, and integrate REST services through OData v4.',
-    'about.p2': 'In parallel I\'m pursuing a <strong>Bachelor\'s degree in Computer Engineering</strong> at UniNettuno, on a part-time track for working students. I aim to consolidate my full-stack SAP skills and grow toward <strong>cloud architecture</strong> roles.',
+    'about.p2': 'In parallel I\'m pursuing a <strong>Bachelor\'s degree in Computer Engineering</strong> at UniNettuno. I aim to consolidate my full-stack SAP skills and grow toward <strong>cloud architecture</strong> roles.',
 
     'seeking.tag': '02 — What I look for',
     'seeking.title': 'Where I want to go.',
