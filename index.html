@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="it" data-lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luca Ritrovato — SAP Consultant</title>
+
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230c1220'/><text x='16' y='23' font-family='Georgia,serif' font-size='15' font-weight='700' fill='white' text-anchor='middle'>LR</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════ NAVBAR ══════ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <span class="navbar-logo">LR</span>
+      <nav class="navbar-links">
+        <a href="#about" data-i18n="nav.about">Chi sono</a>
+        <a href="#whatido" data-i18n="nav.whatido">Cosa so fare</a>
+        <a href="#experience" data-i18n="nav.experience">Esperienze</a>
+        <a href="#education" data-i18n="nav.education">Formazione</a>
+        <a href="#skills" data-i18n="nav.skills">Competenze</a>
+        <a href="#certifications" data-i18n="nav.certifications">Certificazioni</a>
+        <a href="#contact" data-i18n="nav.contact">Contatti</a>
+      </nav>
+      <div class="navbar-actions">
+        <div class="lang-toggle" role="tablist" aria-label="Language">
+          <button class="lang-btn active" data-lang-btn="it" type="button">IT</button>
+          <button class="lang-btn" data-lang-btn="en" type="button">EN</button>
+        </div>
+        <button class="navbar-pdf-btn" onclick="window.print()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="nav.cv">Scarica CV</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════ HERO ══════ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <p class="hero-label" data-i18n="hero.label">SAP Consultant &amp; Developer</p>
+        <h1 class="hero-name" id="hero-name"></h1>
+        <p class="hero-tagline" data-i18n-html="hero.tagline">
+          Costruisco applicazioni enterprise su <span class="accent">SAP BTP</span>,
+          tra cloud, dati e interfacce Fiori.
+        </p>
+        <div class="hero-chips">
+          <a href="mailto:lucaritrovato2016@gmail.com" class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            Email
+          </a>
+          <a href="#" class="chip chip--social" title="LinkedIn — coming soon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/lucaritrovato" target="_blank" rel="noopener" class="chip" title="GitHub profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+          <span class="chip chip--static">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Montegrotto Terme
+          </span>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-label" data-i18n="hero.stack">Stack principale</div>
+          <div class="hero-stack">
+            <span>SAP BTP</span><span>CAP</span><span>SAPUI5</span>
+            <span>SAP HANA</span><span>OData v4</span><span>Node.js</span>
+            <span>JavaScript</span><span>CDS</span>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">1+</span>
+            <span class="stat-label" data-i18n="hero.stat1">Anno di esperienza</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">E2E</span>
+            <span class="stat-label" data-i18n="hero.stat2">Full-stack SAP BTP</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">240h</span>
+            <span class="stat-label" data-i18n="hero.stat3">Formazione certificata</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span data-i18n="hero.scroll">Scorri</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ══════ MAIN ══════ -->
+  <main class="page-content">
+
+    <!-- 01 CHI SONO -->
+    <section class="section" id="about" data-animate>
+      <div class="section-tag" data-i18n="about.tag">01 — Chi sono</div>
+      <h2 class="section-title" data-i18n="about.title">Un developer con la testa nel cloud SAP.</h2>
+      <div class="about-grid">
+        <p class="about-text" data-i18n-html="about.p1">
+          Sono un <strong>SAP Consultant</strong> con esperienza nello sviluppo end-to-end di applicazioni enterprise
+          su <strong>SAP BTP</strong> tramite il modello <strong>CAP (Cloud Application Programming Model)</strong>.
+          Progetto e sviluppo interfacce con <strong>SAPUI5</strong> e SAP Fiori, modello dati in
+          <strong>SAP HANA</strong> con CDS e SQLScript, e integro servizi REST tramite OData v4.
+        </p>
+        <p class="about-text" data-i18n-html="about.p2">
+          In parallelo seguo la <strong>laurea triennale in Ingegneria Informatica</strong> presso
+          UniNettuno, in modalità part-time per lavoratori. Punto a consolidare le mie competenze full-stack
+          in ambito SAP e a crescere verso ruoli di <strong>architettura cloud</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- 02 COSA SO FARE -->
+    <section class="section section--alt" id="whatido" data-animate>
+      <div class="section-tag" data-i18n="whatido.tag">02 — Cosa so fare</div>
+      <h2 class="section-title" data-i18n="whatido.title">Le mie aree di competenza.</h2>
+      <div class="whatido-grid">
+        <div class="whatido-card">
+          <div class="whatido-icon">⚙️</div>
+          <h3 class="whatido-title" data-i18n="whatido.c1.title">SAP Backend</h3>
+          <p class="whatido-desc" data-i18n="whatido.c1.desc">Costruisco servizi OData v4 con SAP CAP, gestisco la logica applicativa con handler Node.js e integro REST API su piattaforma BTP.</p>
+          <div class="whatido-tags"><span>CAP</span><span>OData v4</span><span>Node.js</span><span>SAP BTP</span></div>
+        </div>
+        <div class="whatido-card">
+          <div class="whatido-icon">🖥️</div>
+          <h3 class="whatido-title" data-i18n="whatido.c2.title">UI Development</h3>
+          <p class="whatido-desc" data-i18n="whatido.c2.desc">Sviluppo interfacce Fiori con SAPUI5, gestisco binding dati, navigazione e layout seguendo le SAP Fiori Design Guidelines.</p>
+          <div class="whatido-tags"><span>SAPUI5</span><span>SAP Fiori</span><span>XML Views</span></div>
+        </div>
+        <div class="whatido-card">
+          <div class="whatido-icon">🗄️</div>
+          <h3 class="whatido-title" data-i18n="whatido.c3.title">Database &amp; Query</h3>
+          <p class="whatido-desc" data-i18n="whatido.c3.desc">Modello dati con CDS, scrivo procedure SQLScript su SAP HANA e ottimizzo query per performance su column store.</p>
+          <div class="whatido-tags"><span>SAP HANA</span><span>CDS</span><span>SQLScript</span><span>SQL</span></div>
+        </div>
+        <div class="whatido-card">
+          <div class="whatido-icon">☁️</div>
+          <h3 class="whatido-title" data-i18n="whatido.c4.title">Cloud &amp; Integration</h3>
+          <p class="whatido-desc" data-i18n="whatido.c4.desc">Configuro destinazioni, gestisco build e deploy via mta.yaml su SAP BTP e integro servizi esterni tramite OData e REST API.</p>
+          <div class="whatido-tags"><span>SAP BTP</span><span>mta.yaml</span><span>REST API</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 ESPERIENZE -->
+    <section class="section" id="experience" data-animate>
+      <div class="section-tag" data-i18n="exp.tag">03 — Esperienze</div>
+      <h2 class="section-title" data-i18n="exp.title">Da dove vengo, dove sono.</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-left">
+            <div class="tl-period" data-i18n-html="exp.idgfab.period">NOV 2024<br/>PRESENTE</div>
+            <div class="tl-dot active"></div>
+            <div class="tl-line last"></div>
+          </div>
+          <div class="tl-card active">
+            <div class="tl-card-header">
+              <div>
+                <h3 class="tl-role" data-i18n="exp.idgfab.role">SAP Consultant</h3>
+                <p class="tl-org">IDGFAB — Vigonza, Veneto</p>
+              </div>
+              <span class="tl-badge" data-i18n="exp.badge">In corso</span>
+            </div>
+            <p class="tl-desc" data-i18n="exp.idgfab.intro">Sviluppo end-to-end di applicazioni enterprise su SAP BTP per clienti di vari settori (banking, retail, manifatturiero). Dalla modellazione dati alla UI Fiori, copro tutti i layer dello stack.</p>
+            <ul class="tl-bullets">
+              <li data-i18n-html="exp.idgfab.b1">Progettazione e sviluppo di applicazioni full-stack su <strong>SAP BTP</strong> con architettura CAP, copertura completa di modello dati, business logic, esposizione servizi e UI.</li>
+              <li data-i18n-html="exp.idgfab.b2">Implementazione di <strong>workflow approvativi complessi</strong> e gestione di processi enterprise: ordini, anagrafiche, reportistica multi-livello.</li>
+              <li data-i18n-html="exp.idgfab.b3">Modellazione dati con <strong>CDS Views</strong> e sviluppo di procedure <strong>SQLScript</strong> ottimizzate su SAP HANA Cloud.</li>
+              <li data-i18n-html="exp.idgfab.b4">Sviluppo di <strong>UI SAPUI5/Fiori</strong> responsive integrate con servizi OData v4 esposti dal backend CAP.</li>
+              <li data-i18n-html="exp.idgfab.b5">Realizzazione di <strong>integrazioni</strong> con sistemi interni ed esterni tramite OData e REST API.</li>
+              <li data-i18n-html="exp.idgfab.b6">Build e deploy su BTP tramite <strong>mta.yaml</strong>, uso di Git per versioning e Jira per tracciamento attività.</li>
+            </ul>
+            <div class="tl-tags"><span>SAP CAP</span><span>SAPUI5</span><span>SAP HANA</span><span>OData v4</span><span>Node.js</span><span>CDS</span><span>SAP BTP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other experience: animatore -->
+      <div class="other-exp">
+        <div class="other-exp-label" data-i18n="exp.other">Altre esperienze</div>
+        <div class="other-exp-card">
+          <div class="other-exp-header">
+            <div>
+              <h4 class="other-exp-role" data-i18n="exp.anim.role">Animatore Turistico</h4>
+              <p class="other-exp-org" data-i18n="exp.anim.org">Hotel — Trentino · Estate 2024</p>
+            </div>
+          </div>
+          <p class="other-exp-desc" data-i18n="exp.anim.desc">
+            Esperienza estiva intensiva: gestione autonoma di gruppi e attività di intrattenimento,
+            comunicazione diretta con il cliente, problem solving sotto stress. Una palestra reale
+            per le soft skill che oggi porto nel lavoro tecnico — autonomia, responsabilità e capacità
+            di stare in mezzo alle persone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 FORMAZIONE -->
+    <section class="section section--alt" id="education" data-animate>
+      <div class="section-tag" data-i18n="edu.tag">04 — Formazione</div>
+      <h2 class="section-title" data-i18n="edu.title">Costruire le fondamenta.</h2>
+      <div class="edu-grid">
+        <div class="edu-card edu-card--main">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-status" data-i18n="edu.status">In corso · Part-time</div>
+          <h3 class="edu-degree" data-i18n="edu.uni.degree">Ingegneria Informatica</h3>
+          <p class="edu-type" data-i18n="edu.uni.type">Laurea Triennale</p>
+          <p class="edu-school">Università Telematica Internazionale UniNettuno</p>
+          <p class="edu-period" data-i18n="edu.uni.period">Set 2024 → in corso</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">📋</div>
+          <h3 class="edu-degree" data-i18n="edu.hs.degree">Maturità</h3>
+          <p class="edu-type" data-i18n="edu.hs.type">Amministrazione, Finanza e Marketing</p>
+          <p class="edu-school">IIS L.B. Alberti — Abano Terme, Veneto</p>
+          <p class="edu-period" data-i18n="edu.hs.period">Diploma conseguito</p>
+          <p class="edu-extra" data-i18n="edu.hs.extra">Tirocinio scolastico in ambito tecnico-economico presso ente pubblico.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 SKILLS (fusione di 05 + 06) -->
+    <section class="section" id="skills" data-animate>
+      <div class="section-tag" data-i18n="skills.tag">05 — Competenze tecniche</div>
+      <h2 class="section-title" data-i18n="skills.title">Il mio arsenale tecnico.</h2>
+
+      <div class="skills-legend">
+        <span class="legend-item"><span class="legend-dot legend-dot--core"></span> <span data-i18n="skills.legend.core">Core — uso quotidiano</span></span>
+        <span class="legend-item"><span class="legend-dot legend-dot--working"></span> <span data-i18n="skills.legend.working">Working — uso regolare</span></span>
+        <span class="legend-item"><span class="legend-dot legend-dot--basic"></span> <span data-i18n="skills.legend.basic">Basic — fondamenti</span></span>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill-block skill-block--featured">
+          <div class="skill-block-header">
+            <span class="skill-block-icon">⚡</span>
+            <h3 class="skill-block-title" data-i18n="skills.sap">SAP Ecosystem</h3>
+            <span class="skill-block-badge" data-i18n="skills.badge.core">Core</span>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill--main" data-level="core">SAPUI5 / Fiori</span>
+            <span class="pill pill--main" data-level="core">SAP BTP</span>
+            <span class="pill pill--main" data-level="core">SAP CAP</span>
+            <span class="pill pill--main" data-level="working">CDS</span>
+            <span class="pill pill--main" data-level="working">OData v4</span>
+            <span class="pill pill--main" data-level="working">SAP HANA</span>
+            <span class="pill pill--main" data-level="working">SQLScript</span>
+            <span class="pill pill--main" data-level="working">SAP BAS</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-header"><span class="skill-block-icon">⚙️</span><h3 class="skill-block-title" data-i18n="skills.backend">Backend &amp; Dati</h3></div>
+          <div class="skill-pills">
+            <span class="pill" data-level="working">Node.js</span>
+            <span class="pill" data-level="working">SQL</span>
+            <span class="pill" data-level="working">REST API</span>
+            <span class="pill" data-level="working">JSON</span>
+            <span class="pill" data-level="working" data-i18n="skills.async">Async Programming</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-header"><span class="skill-block-icon">🌐</span><h3 class="skill-block-title" data-i18n="skills.frontend">Frontend</h3></div>
+          <div class="skill-pills">
+            <span class="pill" data-level="working">JavaScript (ES6+)</span>
+            <span class="pill" data-level="basic">HTML5</span>
+            <span class="pill" data-level="basic">CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-header"><span class="skill-block-icon">💻</span><h3 class="skill-block-title" data-i18n="skills.other">Altri linguaggi</h3></div>
+          <div class="skill-pills">
+            <span class="pill" data-level="basic">Java</span>
+            <span class="pill" data-level="basic">Python</span>
+            <span class="pill" data-level="basic">C</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-header"><span class="skill-block-icon">🛠️</span><h3 class="skill-block-title" data-i18n="skills.tools">Strumenti</h3></div>
+          <div class="skill-pills">
+            <span class="pill" data-level="working">Git</span>
+            <span class="pill" data-level="working">GitHub</span>
+            <span class="pill" data-level="working">Jira</span>
+            <span class="pill" data-level="working">VS Code</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-header"><span class="skill-block-icon">🗣️</span><h3 class="skill-block-title" data-i18n="skills.lang">Lingue</h3></div>
+          <div class="skill-pills">
+            <span class="pill pill--lang">🇮🇹 <span data-i18n="lang.it">Italiano</span> <em data-i18n="lang.native">Madrelingua</em></span>
+            <span class="pill pill--lang">🇬🇧 <span data-i18n="lang.en">Inglese</span> <em>B1</em></span>
+            <span class="pill pill--lang">🇪🇸 <span data-i18n="lang.es">Spagnolo</span> <em>A1</em></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 CERTIFICAZIONI -->
+    <section class="section section--alt" id="certifications" data-animate>
+      <div class="section-tag" data-i18n="cert.tag">06 — Certificazioni</div>
+      <h2 class="section-title" data-i18n="cert.title">Formazione extra.</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-top"><span class="cert-emoji">☕</span><span class="cert-provider">Talentform</span></div>
+          <h3 class="cert-title">Java Developer</h3>
+          <p class="cert-meta" data-i18n="cert.meta">Attestato di formazione professionale · 240 ore</p>
+          <p class="cert-desc" data-i18n="cert.desc">Percorso intensivo sullo sviluppo applicazioni in Java: sintassi, OOP, gestione eccezioni e fondamenti di programmazione strutturata.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA CONTATTI -->
+    <section class="section cta-section" id="contact" data-animate>
+      <div class="cta-inner">
+        <p class="cta-tag" data-i18n="cta.tag">Parliamoci</p>
+        <h2 class="cta-title" data-i18n-html="cta.title">Hai un progetto SAP<br/>o vuoi solo dirmi ciao?</h2>
+        <p class="cta-sub" data-i18n="cta.sub">Sono aperto a nuove opportunità, collaborazioni o semplicemente una chiacchierata tecnica.</p>
+        <div class="cta-links">
+          <a href="mailto:lucaritrovato2016@gmail.com" class="cta-btn cta-btn--primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            lucaritrovato2016@gmail.com
+          </a>
+          <a href="#" class="cta-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/lucaritrovato" target="_blank" rel="noopener" class="cta-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════ FOOTER ══════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Luca Ritrovato</span>
+      <p class="footer-legal" data-i18n="footer.legal">Autorizzo il trattamento dei dati personali ai sensi del D.Lgs. 196/2003 e del Reg. UE 2016/679 (GDPR).</p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
