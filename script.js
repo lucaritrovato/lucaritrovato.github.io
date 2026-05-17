@@ -11,6 +11,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const animated = document.querySelectorAll('[data-animate]');
 
 
+  /* ── DOWNLOAD CV: try PDF first, fallback to print ── */
+  const cvBtn = document.getElementById('downloadCvBtn');
+  if (cvBtn) {
+    cvBtn.addEventListener('click', async () => {
+      // Try to fetch the PDF; if exists, download it. Otherwise, fall back to print.
+      try {
+        const res = await fetch('cv-luca-ritrovato.pdf', { method: 'HEAD' });
+        if (res.ok) {
+          // PDF exists — trigger download
+          const a = document.createElement('a');
+          a.href = 'cv-luca-ritrovato.pdf';
+          a.download = 'cv-luca-ritrovato.pdf';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          return;
+        }
+      } catch (_) {
+        /* fall through to print */
+      }
+      window.print();
+    });
+  }
+
+
   /* ── INITIAL LANGUAGE ── */
   const savedLang = localStorage.getItem('lr-cv-lang');
   const initialLang = savedLang === 'en' ? 'en' : 'it';

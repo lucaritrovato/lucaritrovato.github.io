@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Luca Ritrovato — SAP Consultant</title>
 
+  <!-- SEO -->
+  <meta name="description" content="Luca Ritrovato — SAP Consultant specializzato in SAP BTP, CAP, SAPUI5 e SAP HANA. Sviluppo end-to-end di applicazioni enterprise full-stack." />
+  <meta name="author" content="Luca Ritrovato" />
+  <meta name="keywords" content="SAP Consultant, SAP BTP, SAP CAP, SAPUI5, SAP HANA, OData, CDS, Node.js, Fiori, Cloud Application Programming Model, sviluppatore SAP, full-stack SAP" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lucaritrovato.github.io/" />
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, Telegram) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lucaritrovato.github.io/" />
+  <meta property="og:title" content="Luca Ritrovato — SAP Consultant" />
+  <meta property="og:description" content="SAP Consultant full-stack — SAP BTP, CAP, SAPUI5, HANA. Sviluppo end-to-end di applicazioni enterprise." />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="Luca Ritrovato — CV" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Luca Ritrovato — SAP Consultant" />
+  <meta name="twitter:description" content="SAP Consultant full-stack — SAP BTP, CAP, SAPUI5, HANA." />
+
+  <!-- Theme color (mobile address bar) -->
+  <meta name="theme-color" content="#0c1220" />
+
   <!-- Favicon SVG -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230c1220'/><text x='16' y='23' font-family='Georgia,serif' font-size='15' font-weight='700' fill='white' text-anchor='middle'>LR</text></svg>" />
 
@@ -21,7 +45,9 @@
       <span class="navbar-logo">LR</span>
       <nav class="navbar-links">
         <a href="#about" data-i18n="nav.about">Chi sono</a>
+        <a href="#seeking" data-i18n="nav.seeking">Cosa cerco</a>
         <a href="#whatido" data-i18n="nav.whatido">Cosa so fare</a>
+        <a href="#projects" data-i18n="nav.projects">Progetti</a>
         <a href="#experience" data-i18n="nav.experience">Esperienze</a>
         <a href="#education" data-i18n="nav.education">Formazione</a>
         <a href="#skills" data-i18n="nav.skills">Competenze</a>
@@ -33,7 +59,7 @@
           <button class="lang-btn active" data-lang-btn="it" type="button">IT</button>
           <button class="lang-btn" data-lang-btn="en" type="button">EN</button>
         </div>
-        <button class="navbar-pdf-btn" onclick="window.print()">
+        <button class="navbar-pdf-btn" id="downloadCvBtn" type="button">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           <span data-i18n="nav.cv">Scarica CV</span>
         </button>
@@ -53,7 +79,7 @@
           tra cloud, dati e interfacce Fiori.
         </p>
         <div class="hero-chips">
-          <a href="mailto:lucaritrovato2016@gmail.com" class="chip">
+          <a href="mailto:luca.ritrovato2016@gmail.com?subject=Contatto%20dal%20tuo%20sito%20CV" class="chip">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
             Email
           </a>
@@ -124,9 +150,28 @@
       </div>
     </section>
 
-    <!-- 02 COSA SO FARE -->
-    <section class="section section--alt" id="whatido" data-animate>
-      <div class="section-tag" data-i18n="whatido.tag">02 — Cosa so fare</div>
+    <!-- 02 COSA CERCO -->
+    <section class="section section--alt" id="seeking" data-animate>
+      <div class="section-tag" data-i18n="seeking.tag">02 — Cosa cerco</div>
+      <h2 class="section-title" data-i18n="seeking.title">Dove voglio andare.</h2>
+      <div class="seeking-card">
+        <div class="seeking-icon">🎯</div>
+        <p class="seeking-text" data-i18n-html="seeking.text">
+          Sono aperto a opportunità come <strong>SAP Developer / Consultant</strong> in contesti strutturati,
+          con focus su SAP BTP, CAP e sviluppo full-stack. <strong>Open to relocation</strong>,
+          in particolare verso <strong>Spagna</strong> e altri paesi UE.
+        </p>
+        <div class="seeking-chips">
+          <span class="seeking-chip"><span class="seeking-chip-dot"></span> <span data-i18n="seeking.chip1">SAP Developer / Consultant</span></span>
+          <span class="seeking-chip"><span class="seeking-chip-dot"></span> <span data-i18n="seeking.chip2">Remoto · Ibrido · On-site</span></span>
+          <span class="seeking-chip"><span class="seeking-chip-dot"></span> <span data-i18n="seeking.chip3">Relocation EU (preferenza Spagna)</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 COSA SO FARE -->
+    <section class="section" id="whatido" data-animate>
+      <div class="section-tag" data-i18n="whatido.tag">03 — Cosa so fare</div>
       <h2 class="section-title" data-i18n="whatido.title">Le mie aree di competenza.</h2>
       <div class="whatido-grid">
         <div class="whatido-card">
@@ -156,9 +201,49 @@
       </div>
     </section>
 
-    <!-- 03 ESPERIENZE -->
+    <!-- 04 PROGETTI -->
+    <section class="section section--alt" id="projects" data-animate>
+      <div class="section-tag" data-i18n="proj.tag">04 — Progetti</div>
+      <h2 class="section-title" data-i18n="proj.title">Cose che ho costruito.</h2>
+      <div class="proj-grid">
+
+        <article class="proj-card">
+          <div class="proj-card-top">
+            <span class="proj-emoji">💼</span>
+            <span class="proj-type" data-i18n="proj.p1.type">Personal</span>
+          </div>
+          <h3 class="proj-name" data-i18n="proj.p1.name">CV interattivo</h3>
+          <p class="proj-desc" data-i18n="proj.p1.desc">Questo sito. Single-page CV con sistema di internazionalizzazione IT/EN custom, scroll-spy, animazioni intersezione e modalità print ottimizzata. Zero framework, zero dipendenze.</p>
+          <div class="proj-tags">
+            <span>HTML5</span><span>CSS</span><span>JavaScript</span><span>i18n</span><span>GitHub Pages</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/lucaritrovato/lucaritrovato.github.io" target="_blank" rel="noopener" class="proj-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              <span>Source</span>
+            </a>
+            <a href="https://lucaritrovato.github.io/" target="_blank" rel="noopener" class="proj-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              <span data-i18n="proj.live">Live</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="proj-card proj-card--placeholder">
+          <div class="proj-card-top">
+            <span class="proj-emoji">🚧</span>
+            <span class="proj-type" data-i18n="proj.soon">In arrivo</span>
+          </div>
+          <h3 class="proj-name" data-i18n="proj.p2.name">Più progetti in arrivo</h3>
+          <p class="proj-desc" data-i18n="proj.p2.desc">Sto pubblicando su GitHub progetti di studio in ambito SAP CAP e small utility tools. Tornate presto.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 05 ESPERIENZE -->
     <section class="section" id="experience" data-animate>
-      <div class="section-tag" data-i18n="exp.tag">03 — Esperienze</div>
+      <div class="section-tag" data-i18n="exp.tag">05 — Esperienze</div>
       <h2 class="section-title" data-i18n="exp.title">Da dove vengo, dove sono.</h2>
       <div class="timeline">
         <div class="tl-item">
@@ -211,7 +296,7 @@
 
     <!-- 04 FORMAZIONE -->
     <section class="section section--alt" id="education" data-animate>
-      <div class="section-tag" data-i18n="edu.tag">04 — Formazione</div>
+      <div class="section-tag" data-i18n="edu.tag">06 — Formazione</div>
       <h2 class="section-title" data-i18n="edu.title">Costruire le fondamenta.</h2>
       <div class="edu-grid">
         <div class="edu-card edu-card--main">
@@ -235,7 +320,7 @@
 
     <!-- 05 SKILLS (fusione di 05 + 06) -->
     <section class="section" id="skills" data-animate>
-      <div class="section-tag" data-i18n="skills.tag">05 — Competenze tecniche</div>
+      <div class="section-tag" data-i18n="skills.tag">07 — Competenze tecniche</div>
       <h2 class="section-title" data-i18n="skills.title">Il mio arsenale tecnico.</h2>
 
       <div class="skills-legend">
@@ -315,7 +400,7 @@
 
     <!-- 06 CERTIFICAZIONI -->
     <section class="section section--alt" id="certifications" data-animate>
-      <div class="section-tag" data-i18n="cert.tag">06 — Certificazioni</div>
+      <div class="section-tag" data-i18n="cert.tag">08 — Certificazioni</div>
       <h2 class="section-title" data-i18n="cert.title">Formazione extra.</h2>
       <div class="cert-grid">
         <div class="cert-card">
@@ -334,9 +419,9 @@
         <h2 class="cta-title" data-i18n-html="cta.title">Hai un progetto SAP<br/>o vuoi solo dirmi ciao?</h2>
         <p class="cta-sub" data-i18n="cta.sub">Sono aperto a nuove opportunità, collaborazioni o semplicemente una chiacchierata tecnica.</p>
         <div class="cta-links">
-          <a href="mailto:lucaritrovato2016@gmail.com" class="cta-btn cta-btn--primary">
+          <a href="mailto:luca.ritrovato2016@gmail.com?subject=Contatto%20dal%20tuo%20sito%20CV" class="cta-btn cta-btn--primary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-            lucaritrovato2016@gmail.com
+            luca.ritrovato2016@gmail.com
           </a>
           <a href="#" class="cta-btn">
             <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>

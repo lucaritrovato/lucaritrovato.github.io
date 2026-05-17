@@ -5,7 +5,9 @@
 const I18N = {
   it: {
     'nav.about': 'Chi sono',
+    'nav.seeking': 'Cosa cerco',
     'nav.whatido': 'Cosa so fare',
+    'nav.projects': 'Progetti',
     'nav.experience': 'Esperienze',
     'nav.education': 'Formazione',
     'nav.skills': 'Competenze',
@@ -26,7 +28,14 @@ const I18N = {
     'about.p1': 'Sono un <strong>SAP Consultant</strong> con esperienza nello sviluppo end-to-end di applicazioni enterprise su <strong>SAP BTP</strong> tramite il modello <strong>CAP (Cloud Application Programming Model)</strong>. Progetto e sviluppo interfacce con <strong>SAPUI5</strong> e SAP Fiori, modello dati in <strong>SAP HANA</strong> con CDS e SQLScript, e integro servizi REST tramite OData v4.',
     'about.p2': 'In parallelo seguo la <strong>laurea triennale in Ingegneria Informatica</strong> presso UniNettuno, in modalità part-time per lavoratori. Punto a consolidare le mie competenze full-stack in ambito SAP e a crescere verso ruoli di <strong>architettura cloud</strong>.',
 
-    'whatido.tag': '02 — Cosa so fare',
+    'seeking.tag': '02 — Cosa cerco',
+    'seeking.title': 'Dove voglio andare.',
+    'seeking.text': 'Sono aperto a opportunità come <strong>SAP Developer / Consultant</strong> in contesti strutturati, con focus su SAP BTP, CAP e sviluppo full-stack. <strong>Open to relocation</strong>, in particolare verso <strong>Spagna</strong> e altri paesi UE.',
+    'seeking.chip1': 'SAP Developer / Consultant',
+    'seeking.chip2': 'Remoto · Ibrido · On-site',
+    'seeking.chip3': 'Relocation EU (preferenza Spagna)',
+
+    'whatido.tag': '03 — Cosa so fare',
     'whatido.title': 'Le mie aree di competenza.',
     'whatido.c1.title': 'SAP Backend',
     'whatido.c1.desc': 'Costruisco servizi OData v4 con SAP CAP, gestisco la logica applicativa con handler Node.js e integro REST API su piattaforma BTP.',
@@ -37,7 +46,17 @@ const I18N = {
     'whatido.c4.title': 'Cloud & Integration',
     'whatido.c4.desc': 'Configuro destinazioni, gestisco build e deploy via mta.yaml su SAP BTP e integro servizi esterni tramite OData e REST API.',
 
-    'exp.tag': '03 — Esperienze',
+    'proj.tag': '04 — Progetti',
+    'proj.title': 'Cose che ho costruito.',
+    'proj.live': 'Live',
+    'proj.soon': 'In arrivo',
+    'proj.p1.type': 'Personal',
+    'proj.p1.name': 'CV interattivo',
+    'proj.p1.desc': 'Questo sito. Single-page CV con sistema di internazionalizzazione IT/EN custom, scroll-spy, animazioni intersezione e modalità print ottimizzata. Zero framework, zero dipendenze.',
+    'proj.p2.name': 'Più progetti in arrivo',
+    'proj.p2.desc': 'Sto pubblicando su GitHub progetti di studio in ambito SAP CAP e small utility tools. Tornate presto.',
+
+    'exp.tag': '05 — Esperienze',
     'exp.title': 'Da dove vengo, dove sono.',
     'exp.badge': 'In corso',
     'exp.idgfab.period': 'NOV 2024<br/>PRESENTE',
@@ -54,7 +73,7 @@ const I18N = {
     'exp.anim.org': 'Hotel — Trentino · Estate 2024',
     'exp.anim.desc': 'Esperienza estiva intensiva: gestione autonoma di gruppi e attività di intrattenimento, comunicazione diretta con il cliente, problem solving sotto stress. Una palestra reale per le soft skill che oggi porto nel lavoro tecnico — autonomia, responsabilità e capacità di stare in mezzo alle persone.',
 
-    'edu.tag': '04 — Formazione',
+    'edu.tag': '06 — Formazione',
     'edu.title': 'Costruire le fondamenta.',
     'edu.status': 'In corso · Part-time',
     'edu.uni.degree': 'Ingegneria Informatica',
@@ -65,7 +84,7 @@ const I18N = {
     'edu.hs.period': 'Diploma conseguito',
     'edu.hs.extra': 'Tirocinio scolastico in ambito tecnico-economico presso ente pubblico.',
 
-    'skills.tag': '05 — Competenze tecniche',
+    'skills.tag': '07 — Competenze tecniche',
     'skills.title': 'Il mio arsenale tecnico.',
     'skills.legend.core': 'Core — uso quotidiano',
     'skills.legend.working': 'Working — uso regolare',
@@ -83,7 +102,7 @@ const I18N = {
     'lang.es': 'Spagnolo',
     'lang.native': 'Madrelingua',
 
-    'cert.tag': '06 — Certificazioni',
+    'cert.tag': '08 — Certificazioni',
     'cert.title': 'Formazione extra.',
     'cert.meta': 'Attestato di formazione professionale · 240 ore',
     'cert.desc': 'Percorso intensivo sullo sviluppo applicazioni in Java: sintassi, OOP, gestione eccezioni e fondamenti di programmazione strutturata.',
@@ -97,7 +116,9 @@ const I18N = {
 
   en: {
     'nav.about': 'About',
+    'nav.seeking': 'What I look for',
     'nav.whatido': 'What I do',
+    'nav.projects': 'Projects',
     'nav.experience': 'Experience',
     'nav.education': 'Education',
     'nav.skills': 'Skills',
@@ -118,7 +139,14 @@ const I18N = {
     'about.p1': 'I\'m an <strong>SAP Consultant</strong> with experience in end-to-end development of enterprise applications on <strong>SAP BTP</strong> using the <strong>CAP (Cloud Application Programming Model)</strong> framework. I design and build interfaces with <strong>SAPUI5</strong> and SAP Fiori, model data in <strong>SAP HANA</strong> with CDS and SQLScript, and integrate REST services through OData v4.',
     'about.p2': 'In parallel I\'m pursuing a <strong>Bachelor\'s degree in Computer Engineering</strong> at UniNettuno, on a part-time track for working students. I aim to consolidate my full-stack SAP skills and grow toward <strong>cloud architecture</strong> roles.',
 
-    'whatido.tag': '02 — What I do',
+    'seeking.tag': '02 — What I look for',
+    'seeking.title': 'Where I want to go.',
+    'seeking.text': 'I\'m open to opportunities as <strong>SAP Developer / Consultant</strong> in structured environments, with a focus on SAP BTP, CAP and full-stack development. <strong>Open to relocation</strong>, especially toward <strong>Spain</strong> and other EU countries.',
+    'seeking.chip1': 'SAP Developer / Consultant',
+    'seeking.chip2': 'Remote · Hybrid · On-site',
+    'seeking.chip3': 'EU relocation (Spain preferred)',
+
+    'whatido.tag': '03 — What I do',
     'whatido.title': 'My areas of expertise.',
     'whatido.c1.title': 'SAP Backend',
     'whatido.c1.desc': 'I build OData v4 services with SAP CAP, handle business logic with Node.js handlers and integrate REST APIs on the BTP platform.',
@@ -129,7 +157,17 @@ const I18N = {
     'whatido.c4.title': 'Cloud & Integration',
     'whatido.c4.desc': 'I configure destinations, manage build and deploy via mta.yaml on SAP BTP, and integrate external services through OData and REST APIs.',
 
-    'exp.tag': '03 — Experience',
+    'proj.tag': '04 — Projects',
+    'proj.title': 'Things I\'ve built.',
+    'proj.live': 'Live',
+    'proj.soon': 'Coming soon',
+    'proj.p1.type': 'Personal',
+    'proj.p1.name': 'Interactive CV',
+    'proj.p1.desc': 'This website. Single-page CV with custom IT/EN internationalization, scroll-spy navigation, intersection animations and optimized print mode. Zero frameworks, zero dependencies.',
+    'proj.p2.name': 'More projects coming',
+    'proj.p2.desc': 'I\'m publishing study projects on GitHub focused on SAP CAP and small utility tools. Check back soon.',
+
+    'exp.tag': '05 — Experience',
     'exp.title': 'Where I come from, where I am.',
     'exp.badge': 'Current',
     'exp.idgfab.period': 'NOV 2024<br/>PRESENT',
@@ -146,7 +184,7 @@ const I18N = {
     'exp.anim.org': 'Hotel — Trentino, Italy · Summer 2024',
     'exp.anim.desc': 'Intensive summer experience: autonomous management of groups and entertainment activities, direct customer communication, problem solving under pressure. A real-world training ground for the soft skills I bring into technical work today — autonomy, responsibility and people skills.',
 
-    'edu.tag': '04 — Education',
+    'edu.tag': '06 — Education',
     'edu.title': 'Building the foundations.',
     'edu.status': 'Ongoing · Part-time',
     'edu.uni.degree': 'Computer Engineering',
@@ -157,7 +195,7 @@ const I18N = {
     'edu.hs.period': 'Diploma obtained',
     'edu.hs.extra': 'School internship in technical-economic field at a public institution.',
 
-    'skills.tag': '05 — Technical skills',
+    'skills.tag': '07 — Technical skills',
     'skills.title': 'My technical toolkit.',
     'skills.legend.core': 'Core — daily use',
     'skills.legend.working': 'Working — regular use',
@@ -175,7 +213,7 @@ const I18N = {
     'lang.es': 'Spanish',
     'lang.native': 'Native',
 
-    'cert.tag': '06 — Certifications',
+    'cert.tag': '08 — Certifications',
     'cert.title': 'Extra training.',
     'cert.meta': 'Professional training certificate · 240 hours',
     'cert.desc': 'Intensive course on Java application development: syntax, OOP, exception handling and fundamentals of structured programming.',

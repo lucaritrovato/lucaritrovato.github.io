@@ -1080,6 +1080,193 @@ strong { font-weight: 600; }
 
 
 /* ════════════════════════════════════════
+   COSA CERCO
+════════════════════════════════════════ */
+.seeking-card {
+  max-width: 760px;
+  margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 2rem 2.25rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.seeking-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.seeking-text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #1e293b;
+}
+
+.seeking-text strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.seeking-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.seeking-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.seeking-chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
+}
+
+
+/* ════════════════════════════════════════
+   PROGETTI
+════════════════════════════════════════ */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.proj-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.proj-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+.proj-card--placeholder {
+  background: transparent;
+  border-style: dashed;
+  box-shadow: none;
+  opacity: 0.85;
+}
+
+.proj-card--placeholder:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+.proj-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proj-emoji {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.proj-type {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--bg);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.proj-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.proj-desc {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: #475569;
+  flex: 1;
+}
+
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.proj-tags span {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  padding: 0.18rem 0.55rem;
+  border-radius: 4px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: #334155;
+}
+
+.proj-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.proj-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 500;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.proj-link:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .proj-grid { grid-template-columns: 1fr; }
+}
+
+
+/* ════════════════════════════════════════
    COSA SO FARE
 ════════════════════════════════════════ */
 .whatido-grid {
@@ -1260,48 +1447,230 @@ strong { font-weight: 600; }
    PRINT / PDF
 ════════════════════════════════════════ */
 @media print {
+  /* Page setup: A4 with reasonable margins */
+  @page {
+    size: A4;
+    margin: 12mm 14mm;
+  }
+
+  /* Force print-color rendering everywhere */
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide screen-only UI */
   .navbar, .hero-scroll-hint, .hero-right,
   .navbar-pdf-btn, .lang-toggle,
   .cta-section, .site-footer { display: none !important; }
 
-  body { background: white; }
-
-  .hero {
-    min-height: auto;
-    padding: 2rem 2.5rem 1.5rem;
-    page-break-after: avoid;
-    background: white;
-    color: black;
-  }
-  .hero::before, .hero::after, .hero-grid-bg { display: none; }
-  .hero-content { padding: 0; grid-template-columns: 1fr; }
-  .hero-name { font-size: 2.5rem !important; color: var(--text) !important; }
-  .hero-label { color: var(--accent) !important; }
-  .hero-tagline { color: var(--text) !important; }
-  .hero-chips .chip {
+  html, body {
     background: white !important;
-    border-color: var(--border) !important;
-    color: var(--text) !important;
+    font-size: 10pt;
+    line-height: 1.45;
   }
 
-  .section { padding: 2rem 2.5rem; }
-  .section--alt { background: #f8f8f8 !important; }
+  /* ── HERO: compact, top-aligned, dark background preserved ── */
+  .hero {
+    min-height: auto !important;
+    height: auto !important;
+    display: block !important;
+    padding: 14mm 12mm 10mm !important;
+    page-break-after: avoid;
+    break-after: avoid;
+    background: var(--bg-dark) !important;
+    color: white !important;
+    overflow: visible;
+  }
+  .hero::before, .hero::after, .hero-grid-bg { display: none !important; }
+  .hero-content {
+    padding: 0 !important;
+    display: block !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+  .hero-left { width: 100% !important; }
+  .hero-label {
+    font-size: 8pt !important;
+    color: #60a5fa !important;
+    margin-bottom: 4mm !important;
+  }
+  .hero-name {
+    font-size: 26pt !important;
+    color: white !important;
+    margin-bottom: 4mm !important;
+    line-height: 1.05 !important;
+  }
+  .hero-tagline {
+    font-size: 10.5pt !important;
+    color: rgba(255,255,255,0.75) !important;
+    margin-bottom: 5mm !important;
+    max-width: none !important;
+  }
+  .hero-tagline .accent { color: #60a5fa !important; }
+  .hero-chips {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 2mm !important;
+  }
+  .hero-chips .chip,
+  .hero-chips .chip--static {
+    background: rgba(255,255,255,0.08) !important;
+    border: 1px solid rgba(255,255,255,0.25) !important;
+    color: white !important;
+    font-size: 8.5pt !important;
+    padding: 1mm 3mm !important;
+  }
+  .hero-chips .chip--social { opacity: 1 !important; }
 
-  .tl-card, .edu-card, .skill-block, .cert-card, .whatido-card, .other-exp-card {
+  /* ── SECTIONS: compact, avoid page breaks inside ── */
+  main, .page-content { display: block !important; }
+
+  .section {
+    padding: 8mm 10mm !important;
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+  .section--alt { background: #f4f6fb !important; }
+  .section-tag {
+    font-size: 7.5pt !important;
+    margin-bottom: 2mm !important;
+  }
+  .section-title {
+    font-size: 14pt !important;
+    margin-bottom: 5mm !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Animations: instantly visible in print */
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* ── ABOUT ── */
+  .about-grid { gap: 6mm !important; }
+  .about-text { font-size: 10pt !important; line-height: 1.6 !important; }
+
+  /* ── SEEKING ── */
+  .seeking-card {
+    padding: 5mm 6mm !important;
+    gap: 3mm !important;
+  }
+  .seeking-icon { font-size: 14pt !important; }
+  .seeking-text { font-size: 10pt !important; }
+
+  /* ── WHATIDO ── */
+  .whatido-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 4mm !important;
+  }
+  .whatido-card {
+    padding: 4mm 5mm !important;
+    gap: 2mm !important;
+  }
+  .whatido-icon { font-size: 12pt !important; }
+  .whatido-title { font-size: 10pt !important; }
+  .whatido-desc { font-size: 9pt !important; line-height: 1.5 !important; }
+
+  /* ── PROJECTS ── */
+  .proj-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 4mm !important;
+  }
+  .proj-card {
+    padding: 4mm 5mm !important;
+    gap: 2mm !important;
+  }
+  .proj-name { font-size: 10.5pt !important; }
+  .proj-desc { font-size: 9pt !important; line-height: 1.5 !important; }
+
+  /* ── EXPERIENCE ── */
+  .tl-item {
+    grid-template-columns: 28mm 1fr !important;
+    gap: 4mm !important;
+  }
+  .tl-period { font-size: 7.5pt !important; }
+  .tl-card { padding: 4mm 6mm !important; margin-bottom: 5mm !important; }
+  .tl-role { font-size: 11pt !important; }
+  .tl-org { font-size: 9pt !important; }
+  .tl-desc { font-size: 9.5pt !important; line-height: 1.55 !important; margin-bottom: 3mm !important; }
+  .tl-bullets { gap: 1.5mm !important; margin-bottom: 3mm !important; }
+  .tl-bullets li { font-size: 9pt !important; line-height: 1.45 !important; }
+
+  /* Other experience */
+  .other-exp { margin-top: 6mm !important; padding-top: 4mm !important; }
+  .other-exp-card { padding: 3mm 5mm !important; }
+  .other-exp-role { font-size: 9.5pt !important; }
+  .other-exp-org { font-size: 8.5pt !important; }
+  .other-exp-desc { font-size: 8.5pt !important; line-height: 1.45 !important; }
+
+  /* ── EDUCATION ── */
+  .edu-grid { gap: 4mm !important; }
+  .edu-card { padding: 5mm 6mm !important; }
+  .edu-icon { font-size: 14pt !important; margin-bottom: 2mm !important; }
+  .edu-degree { font-size: 11pt !important; }
+  .edu-type, .edu-school { font-size: 9pt !important; }
+  .edu-period { font-size: 8pt !important; }
+  .edu-extra { font-size: 8pt !important; margin-top: 3mm !important; padding-top: 3mm !important; }
+
+  /* ── SKILLS ── */
+  .skills-legend {
+    margin-bottom: 4mm !important;
+    gap: 5mm !important;
+    font-size: 8pt !important;
+  }
+  .skills-container { gap: 3mm !important; }
+  .skill-block { padding: 4mm 5mm !important; }
+  .skill-block-header { margin-bottom: 3mm !important; }
+  .skill-block-title { font-size: 9.5pt !important; }
+  .skill-pills { gap: 1.5mm !important; }
+  .pill, .pill--main {
+    font-size: 8pt !important;
+    padding: 0.8mm 2.5mm !important;
+  }
+
+  /* Featured SAP block: keep dark for visual impact */
+  .skill-block--featured {
+    background: var(--bg-dark) !important;
+    border-color: rgba(37,99,235,0.4) !important;
+  }
+  .skill-block--featured .skill-block-title { color: white !important; }
+  .pill--main {
+    background: rgba(37,99,235,0.18) !important;
+    border-color: rgba(37,99,235,0.45) !important;
+    color: #93c5fd !important;
+  }
+
+  /* ── CERTIFICATIONS ── */
+  .cert-grid { gap: 4mm !important; }
+  .cert-card { padding: 5mm 6mm !important; }
+  .cert-title { font-size: 11pt !important; }
+  .cert-meta { font-size: 8.5pt !important; }
+  .cert-desc { font-size: 9pt !important; line-height: 1.5 !important; }
+
+  /* ── Avoid awkward breaks ── */
+  .tl-card, .edu-card, .skill-block, .cert-card, .whatido-card, .other-exp-card,
+  .proj-card, .seeking-card {
     box-shadow: none !important;
+    page-break-inside: avoid;
     break-inside: avoid;
   }
 
-  .skill-block--featured {
-    background: white !important;
-    border-color: var(--border) !important;
-  }
-  .skill-block--featured .skill-block-title { color: var(--text) !important; }
-  .pill--main {
-    background: var(--bg-alt) !important;
-    color: var(--text) !important;
-    border-color: var(--border) !important;
+  h2, h3, h4 {
+    page-break-after: avoid;
+    break-after: avoid;
   }
 
-  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  /* Show URLs after links so they're useful on paper */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 7.5pt;
+    color: var(--muted);
+    word-break: break-all;
+  }
+  /* But not for chips/buttons/hero links (would be noisy) */
+  .chip::after, .cta-btn::after, .proj-link::after, .hero-chips a::after,
+  a[href^="mailto"]::after, a[href^="tel"]::after { content: none !important; }
 }
